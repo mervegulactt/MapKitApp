@@ -14,15 +14,16 @@ class ViewController: UIViewController {
 
     @IBOutlet private weak var mapKitView: MKMapView!
 
-    let annotation = MKPointAnnotation()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configurateMapView()
+    }
+    
+    private func configurateMapView() {
+     
         let initialLocation = CLLocation(latitude: 40.2234, longitude: 27.2423)
         mapKitView.centerToLocation(initialLocation)
-        annotation.coordinate = initialLocation.coordinate
-        mapKitView.addAnnotation(annotation)
 
         // belirli bir noktalaya kadar uzaklaşılabiliyor. Sınırlandırmak için.
         let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
@@ -51,7 +52,7 @@ class ViewController: UIViewController {
 
     @IBAction func istLocalitonTapped(_ sender: UIButton) {
 
-        mapKitView.centerToLocation(CLLocation(latitude: 40.877659337337874, longitude: 29.08856704849575))
+        mapKitView.centerToLocation(CLLocation(latitude: 40.8986111, longitude: 29.3091667))
     }
 
     @IBAction func izmirLocationTapped(_ sender: UIButton) {
@@ -67,12 +68,13 @@ private extension MKMapView {
     regionRadius: CLLocationDistance = 5000
   ) {
 
+      let annotation = MKPointAnnotation()
       let coordinateRegion = MKCoordinateRegion(
         center: location.coordinate,
         latitudinalMeters: regionRadius,
         longitudinalMeters: regionRadius)
       annotation.coordinate = location.coordinate
-      mapKitView.addAnnotation(annotation)
+      addAnnotation(annotation)
       setRegion(coordinateRegion, animated: true)
   }
 }

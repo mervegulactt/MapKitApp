@@ -18,14 +18,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4OP-MT-K4N">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="IaO-XF-Ztb"/>
-                                </constraints>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="733.66666666666663"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3lY-S7-tv7">
-                                <rect key="frame" x="0.0" y="600" width="393" height="218"/>
+                                <rect key="frame" x="0.0" y="733.66666666666663" width="393" height="84.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite Locations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4m-DI-3pk">
                                         <rect key="frame" x="5" y="5" width="383" height="20.333333333333332"/>
@@ -34,13 +31,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Uk7-V1-IEo">
-                                        <rect key="frame" x="0.0" y="35.333333333333371" width="393" height="182.66666666666666"/>
+                                        <rect key="frame" x="0.0" y="35.333333333333371" width="393" height="49"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="O8W-zX-QYn">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="89"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="22"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDv-dG-AvJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="89"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="22"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -52,7 +49,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhP-D1-yJN">
-                                                        <rect key="frame" x="94" y="0.0" width="149" height="89"/>
+                                                        <rect key="frame" x="94" y="0.0" width="149" height="22"/>
                                                         <color key="tintColor" systemColor="systemPinkColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="My work place" image="location.fill" catalog="system">
@@ -63,7 +60,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qP8-p0-kmy">
-                                                        <rect key="frame" x="243" y="0.0" width="150" height="89"/>
+                                                        <rect key="frame" x="243" y="0.0" width="150" height="22"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Merve's Home" image="location.fill" catalog="system">
@@ -76,10 +73,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DVB-2a-WHN">
-                                                <rect key="frame" x="0.0" y="94" width="393" height="88.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="27" width="393" height="22"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLi-nG-m4r">
-                                                        <rect key="frame" x="0.0" y="0.0" width="131" height="88.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="131" height="22"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Ankara" image="location.fill" catalog="system">
@@ -90,7 +87,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBR-Oj-4Z8">
-                                                        <rect key="frame" x="131" y="0.0" width="131" height="88.666666666666671"/>
+                                                        <rect key="frame" x="131" y="0.0" width="131" height="22"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="Istanbul" image="location.fill" catalog="system">
@@ -101,7 +98,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DC-HU-P6a">
-                                                        <rect key="frame" x="262" y="0.0" width="131" height="88.666666666666671"/>
+                                                        <rect key="frame" x="262" y="0.0" width="131" height="22"/>
                                                         <color key="tintColor" systemColor="systemRedColor"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="İzmir" image="location.fill" catalog="system">
@@ -114,6 +111,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -137,7 +135,7 @@
                             <constraint firstAttribute="trailing" secondItem="4OP-MT-K4N" secondAttribute="trailing" id="Dho-aN-ANM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3lY-S7-tv7" secondAttribute="trailing" id="Uw3-8y-UBj"/>
                             <constraint firstItem="4OP-MT-K4N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W8v-Bg-ttH"/>
-                            <constraint firstItem="3lY-S7-tv7" firstAttribute="top" secondItem="4OP-MT-K4N" secondAttribute="bottom" id="gaz-M6-6av"/>
+                            <constraint firstAttribute="top" secondItem="4OP-MT-K4N" secondAttribute="bottom" constant="-733.66666666666663" id="gaz-M6-6av"/>
                         </constraints>
                     </view>
                     <connections>
